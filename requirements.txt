@@ -1,0 +1,16 @@
+requests>=2.32,<3
+python-dotenv>=1.1,<2
+
+lancedb>=0.39,<0.40
+pyarrow>=21,<23
+
+sentence-transformers>=6.1,<7
+
+streamlit>=1.50,<2
+
+langgraph>=1.2,<2
+langchain-groq>=1.1,<2
+
+reportlab>=4.4,<5
+
+pytest>=8.4,<9
