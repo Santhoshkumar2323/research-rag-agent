@@ -26,10 +26,10 @@ jobs:
         run: python -m pip install -r requirements.txt
 
       - name: Refresh research database
-        run: python scripts/ingest.py
+        run: python -m scripts.ingest
 
       - name: Check database
-        run: python scripts/inspect_db.py
+        run: python -m scripts.inspect_db
 
       - name: Commit updated database
         run: |
