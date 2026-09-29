@@ -103,7 +103,7 @@ def create_llm() -> ChatGroq:
         max_retries=max_retries,
         timeout=timeout,
         max_tokens=max_tokens,
-        reasoning_format="hidden",
+        reasoning_format="False",
         rate_limiter=rate_limiter,
     )
 
