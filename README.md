@@ -37,12 +37,12 @@ complete execution cycle of CiteHer—spanning the automated background data ref
     <td align="center" valign="top" width="50%">
       <img src="outputs/selected-papers.png" alt="Context Selection Constraints" style="max-width: 100%; border-radius: 4px;" />
       <br />
-      <strong>3. Strict User Context Selection & Constraints Panel</strong>
+      <strong>3. User Context Selection & Constraints Panel</strong>
     </td>
     <td align="center" valign="top" width="50%">
       <img src="outputs/answer.png" alt="Grounded Response Generation" style="max-width: 100%; border-radius: 4px;" />
       <br />
-      <strong>4. Grounded Agent Analysis & Synthesis Layer</strong>
+      <strong>4. Agent Analysis & Synthesis Layer</strong>
     </td>
   </tr>
   
