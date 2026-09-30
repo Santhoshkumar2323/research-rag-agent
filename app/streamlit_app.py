@@ -14,7 +14,7 @@ from research.retrieval import ResearchRetriever
 
 
 st.set_page_config(
-    page_title="Embed for Health",
+    page_title="CiteHer",
     page_icon="🔬",
     layout="wide",
 )
