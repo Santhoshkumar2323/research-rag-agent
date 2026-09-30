@@ -330,7 +330,7 @@ def render_selection_bar() -> None:
 def render_research_tab() -> None:
     load_discovery_papers()
 
-    st.title("Embed for Health")
+    st.title("CiteHer")
 
     st.caption(
         "Discover and analyze research in women's health."
