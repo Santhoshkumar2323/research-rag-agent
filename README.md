@@ -13,6 +13,56 @@ Search women's health research and ask questions that are answered only from the
 
 ---
 
+## Application Walkthrough & Pipeline Gallery
+
+complete execution cycle of CiteHer—spanning the automated background data refresh pipelines down to the multi-stage verifiable user interface.
+
+<table width="100%">
+  <!-- Row 1: Backend Automation & Discovery -->
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <img src="outputs/github-actions.png" alt="Ingestion Pipeline Workflow" style="max-width: 100%; border-radius: 4px;" />
+      <br />
+      <strong>1. Automated Data Ingestion Workflow (GitHub Actions)</strong>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <img src="outputs/search-tab.png" alt="Semantic Search Dashboard" style="max-width: 100%; border-radius: 4px;" />
+      <br />
+      <strong>2. Discovery Portal & Semantic Similarity Search Results</strong>
+    </td>
+  </tr>
+  
+  <!-- Row 2: User Control & Core Agent Generation -->
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <img src="outputs/selected-papers.png" alt="Context Selection Constraints" style="max-width: 100%; border-radius: 4px;" />
+      <br />
+      <strong>3. Strict User Context Selection & Constraints Panel</strong>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <img src="outputs/answer.png" alt="Grounded Response Generation" style="max-width: 100%; border-radius: 4px;" />
+      <br />
+      <strong>4. Grounded Agent Analysis & Synthesis Layer</strong>
+    </td>
+  </tr>
+  
+  <!-- Row 3: Verification, Metadata, & Resource Telemetry -->
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <img src="outputs/evidence.png" alt="Extracted Evidence Block" style="max-width: 100%; border-radius: 4px;" />
+      <br />
+      <strong>5. Deterministic Claims & Abstract Text Evidence Map</strong>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <img src="outputs/citations & tokens.png" alt="Telemetry and Citation Metadata" style="max-width: 100%; border-radius: 4px;" />
+      <br />
+      <strong>6. Verified Source Metadata Links & LLM Token Telemetry</strong>
+    </td>
+  </tr>
+</table>
+
+
+
 ## What it does
 
 Research papers are hard to search by keyword, and AI summaries often make up citations. CiteHer takes a different approach:
