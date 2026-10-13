@@ -86,7 +86,7 @@ def create_llm() -> ChatGroq:
 
     max_tokens = _get_int(
         "GROQ_MAX_TOKENS",
-        1200,
+        4096,
     )
 
     timeout = _get_float(
@@ -104,6 +104,7 @@ def create_llm() -> ChatGroq:
         timeout=timeout,
         max_tokens=max_tokens,
         rate_limiter=rate_limiter,
+        model_kwargs={"reasoning_effort": "low"},
     )
 
 

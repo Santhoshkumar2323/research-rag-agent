@@ -221,23 +221,22 @@ Rules:
 8. Return the required structured JSON response.
 """
 
-    try:
-        response = structured_llm.invoke(prompt)
+    response = None
+    last_exc = None
 
-    except Exception as exc:
+    for _ in range(3):
+        try:
+            response = structured_llm.invoke(prompt)
+            break
+        except Exception as exc:
+            last_exc = exc
+
+    if response is None:
         return {
             "error": (
-                f"Evidence extraction failed: {exc}"
+                f"Evidence extraction failed: {last_exc}"
             )
         }
-
-    # include_raw=True returns:
-    #
-    # {
-    #     "raw": AIMessage(...),
-    #     "parsed": EvidenceExtractionResponse(...),
-    #     "parsing_error": ...
-    # }
     raw_response = response.get("raw")
     parsed_response = response.get("parsed")
 
