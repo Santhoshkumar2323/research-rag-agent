@@ -104,7 +104,7 @@ def create_llm() -> ChatGroq:
         timeout=timeout,
         max_tokens=max_tokens,
         rate_limiter=rate_limiter,
-        model_kwargs={"reasoning_effort": "low"},
+        reasoning_effort="low",
     )
 
 
